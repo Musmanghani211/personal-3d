@@ -52,4 +52,11 @@ button:hover {
     font-size: 20px;
     color: white;
     font-weight: bold;
+    
+}
+.prev {
+    cursor: pointer;
+    font-size: 24px;
+    /* color: #007bff; */
+    font-weight: bold;
 }
