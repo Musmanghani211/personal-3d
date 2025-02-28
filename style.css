@@ -127,3 +127,32 @@ body {
     color: #007bff;
     font-weight: bold;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+    .left-section {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 15px;
+    }
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+    .pagination {
+        position: static;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        justify-content: center;
+    }
+}
