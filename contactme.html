@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contactme.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Me!</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="pagination">
+        <span class="prev">&#x276E;</span>
+        <span class="page-num">4</span>
+        <div class="user-icon">
+            <i class="fas fa-user"></i>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script>
+ 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const prevButton = document.querySelector(".prev");
+    // const nextButton = document.querySelector(".next");
+    const pageNum = document.querySelector(".page-num");
+    let currentPage = 6;
+    
+    prevButton.addEventListener("click", function () {
+        if (currentPage > 1) {
+            currentPage--;
+            updatePageNumber();
+        }
+    });
+
+    nextButton.addEventListener("click", function () {
+        currentPage++;
+        updatePageNumber();
+    });
+
+    function updatePageNumber() {
+        pageNum.textContent = currentPage;
+    }
+});
+</script>

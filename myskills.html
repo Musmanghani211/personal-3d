@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Page 3 - Personal Portfolio</title>
+    <link rel="stylesheet" href="myskills.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-box"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-box"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-box"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-box"><i class="fab fa-angular"></i> Angular</div>
+                <div class="skill-box"><i class="fab fa-react"></i> React</div>
+                <div class="skill-box"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                <div class="skill-box"><i class="fas fa-code"></i> Tailwind</div>
+                <div class="skill-box"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-box"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-box"><i class="fab fa-php"></i> PHP</div>
+                <div class="skill-box"><i class="fab fa-node"></i> Node.js</div>
+                <div class="skill-box"><i class="fab fa-figma"></i> Figma</div>
+            </div>
+            
+        </div>
+        <div class="right-section">
+            <h2>Latest Project</h2>
+            <div class="project">
+                <img class="project-image" src="./image/usmanqa.webp" alt="Project Image">
+                <h3>Project Name</h3>
+                <p><strong>Tech Used:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="buttons">
+                    <button>Source Code</button>
+                    <button>More Projects</button>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <span class="prev" onclick="changePagepre()"><i class="fas fa-arrow-left"></i></span>
+            <span class="page-num">3</span>
+            <span class="next" onclick="changePagenext()"><i class="fas fa-arrow-right"></i></span>
+        </div>
+    </div>
+
+    <script>
+function changePagenext(){
+            window.location.href = "contactme.html";
+        }
+        function changePagepre(){
+            window.location.href = "educationalservices.html";
+        }
+
+       
+        </script>
+    </body>
+</html>

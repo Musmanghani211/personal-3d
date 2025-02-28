@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.left-section {
+    width: 50%;
+    background: #007bff;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+}
+.right-section {
+    width: 50%;
+    background: #fff;
+    border-left: 3px solid #007bff;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+}
+.left-section h2, .right-section h2 {
+    text-align: center;
+    color: white;
+}
+.right-section h2 {
+    color: black;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+.skill-box, .project-box {
+    background: #fff;
+    border: 2px solid #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #007bff;
+}
+.project-image {
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+}
+.page-num {
+    font-size: 18px;
+    font-weight: bold;
+}
+.prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .right-section {
+        border-left: none;
+        border-top: 3px solid #007bff;
+    }
+    .skills, .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pagination {
+        justify-content: center;
+    }
+}
+
+

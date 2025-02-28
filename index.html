@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon Felix - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="profile.jpg" alt="Gordon Felix">
+            <h1>Gordon Felix</h1>
+            <h2>Web Developer</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Hi, I'm Gordon Felix, a Web Developer.</p>
+            <div class="buttons">
+                <button onclick="downloadCV()">Download CV</button>
+                <button onclick="contactMe()">Contact Me</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="experience">
+                    <h3><i class="fas fa-calendar-alt"></i> 2020 - 2021</h3>
+                    <h4>Web Developer - Allianz</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="experience">
+                    <h3><i class="fas fa-calendar-alt"></i> 2021 - 2022</h3>
+                    <h4>Web Developer - Bank of America</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="experience">
+                    <h3><i class="fas fa-calendar-alt"></i> 2022 - 2023</h3>
+                    <h4>Web Developer - JP Morgan Chase</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <!-- <span class="prev" onclick="changePage(-1)"><i class="fas fa-arrow-left"></i></span> -->
+        <span class="page-num">1</span>
+        <span class="next" onclick="changePage(1)"><i class="fas fa-arrow-right"></i></span>
+    </div>
+    <script>
+        function changePage(){
+            window.location.href = "educationalservices.html";
+        }
+        function downloadCV() {
+            alert("Downloading CV...");
+        }
+        function contactMe() {
+            alert("Redirecting to contact page...");
+        }
+    </script>
+</body>
+</html>

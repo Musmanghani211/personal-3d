@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 119vh;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.left-section {
+    width: 35%;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.left-section img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+.left-section h1, .left-section h2 {
+    margin: 10px 0;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.buttons button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    background: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+.buttons button:hover {
+    background: #ddd;
+}
+.right-section {
+    width: 65%;
+    padding: 20px;
+    position: relative;
+}
+.right-section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #007bff;
+    border-radius: 2px;
+}
+.experience {
+    position: relative;
+    background: #e4e4e4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.experience h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+}
+.experience h3 i {
+    margin-right: 10px;
+}
+.experience::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    bottom: -100px;
+    left: 67%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+}
+.page-num {
+    font-size: 18px;
+    font-weight: bold;
+}
+.prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}

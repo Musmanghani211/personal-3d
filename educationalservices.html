@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Services</title>
+    <link rel="stylesheet" href="educationlaservices.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="event">
+                    <span class="year"><i class="fas fa-calendar-alt"></i> 2017 - 2018</span>
+                    <h3>Master Degree - Melbourne University</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="event">
+                    <span class="year"><i class="fas fa-calendar-alt"></i> 2018 - 2019</span>
+                    <h3>Master Degree - Stanford University</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="event">
+                    <span class="year"><i class="fas fa-calendar-alt"></i> 2019 - 2020</span>
+                    <h3>Master Degree - Harvard University</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>My Services</h2>
+            <div class="services">
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>Creative Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <span class="prev" onclick="changePagepre()"><i class="fas fa-arrow-left"></i></span>
+        <span class="page-num">2</span>
+        <span class="next" onclick="changePagenext()"><i class="fas fa-arrow-right"></i></span>
+    </div>
+</body>
+<script>
+    function changePagenext(){
+            window.location.href = "myskills.html";
+        }
+        function changePagepre(){
+            window.location.href = "index.html";
+        }
+</script>
+</html>
