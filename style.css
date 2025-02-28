@@ -112,7 +112,7 @@ body {
     gap: 10px;
     justify-content: center;
     position: absolute;
-    bottom: -100px;
+    bottom: -4%;
     left: 67%;
     transform: translateX(-50%);
     width: calc(100% - 40px);
@@ -132,12 +132,15 @@ body {
 @media screen and (max-width: 768px) {
     body {
         height: auto;
-        display: block;
+        display: inline-block;
+        
     }
     .container {
         flex-direction: column;
         width: 90%;
         text-align: center;
+        align-items: center;
+
     }
     .left-section {
         width: 100%;
@@ -150,9 +153,10 @@ body {
     }
     .pagination {
         position: static;
-        bottom: auto;
+        bottom: -100px;
         left: auto;
         transform: none;
-        justify-content: center;
+        justify-content: end;
+        margin-top: -38px;
     }
 }
