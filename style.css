@@ -112,7 +112,7 @@ body {
     gap: 10px;
     justify-content: center;
     position: absolute;
-    bottom: -4%;
+    bottom: 1%;
     left: 67%;
     transform: translateX(-50%);
     width: calc(100% - 40px);
