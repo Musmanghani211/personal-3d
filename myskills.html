@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,54 @@
     <title>Page 3 - Personal Portfolio</title>
     <link rel="stylesheet" href="myskills.css">
 </head>
+
 <body>
     <div class="container">
         <div class="left-section">
-            <h2>My Skills</h2>
+            <h2>Quality Assurance</h2>
+            <div class="skills">
+                <div class="skill-box"><i class="fas fa-check-circle"></i> Manual Testing</div>
+                <div class="skill-box"><i class="fas fa-robot"></i> Automation Testing</div>
+                <div class="skill-box"><i class="fas fa-code"></i> Playwright</div>
+                <div class="skill-box"><i class="fas fa-cogs"></i> Cypress</div>
+                <div class="skill-box"><i class="fas fa-bug"></i> Jira</div>
+                <div class="skill-box"><i class="fas fa-tasks"></i> Notion</div>
+            </div>
+        
+            <h2>Web Development</h2>
             <div class="skills">
                 <div class="skill-box"><i class="fab fa-html5"></i> HTML</div>
                 <div class="skill-box"><i class="fab fa-css3-alt"></i> CSS</div>
                 <div class="skill-box"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill-box"><i class="fab fa-angular"></i> Angular</div>
-                <div class="skill-box"><i class="fab fa-react"></i> React</div>
-                <div class="skill-box"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-                <div class="skill-box"><i class="fas fa-code"></i> Tailwind</div>
-                <div class="skill-box"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-box"><i class="fab fa-java"></i> Java</div>
-                <div class="skill-box"><i class="fab fa-php"></i> PHP</div>
-                <div class="skill-box"><i class="fab fa-node"></i> Node.js</div>
-                <div class="skill-box"><i class="fab fa-figma"></i> Figma</div>
+                <div class="skill-box"><i class="fas fa-database"></i> MySQL</div>
+
             </div>
-            
         </div>
+        
         <div class="right-section">
-            <h2>Latest Project</h2>
-            <div class="project">
-                <img class="project-image" src="./image/usmanqa.webp" alt="Project Image">
-                <h3>Project Name</h3>
-                <p><strong>Tech Used:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <div class="buttons">
-                    <button>Source Code</button>
-                    <button>More Projects</button>
-                </div>
+            <h2>Latest Projects</h2>
+        
+            <!-- Quality Assurance Projects -->
+            <div class="project-category">
+                <h3 style="text-align: center;"> Quality Assurance Projects</h3>
+                <ul>
+                    <li><i class="fas fa-mobile-alt"></i> <strong>Kido Protect:</strong> Fetch child device data and monitor on parent device</li>
+                    <li><i class="fas fa-book"></i> <strong>Nextiva:</strong> A blog website with more than 200 pages</li>
+                    <li><i class="fas fa-heartbeat"></i> <strong>YOU(th):</strong> Health monitoring through face video and voice recording</li>
+                </ul>
+            </div>
+        
+            <!-- Web Development Projects -->
+            <div class="project-category">
+                <h3 style="text-align: center;"> Web Development Projects</h3>
+                <ul>
+                    <li><i class="fas fa-pills"></i> <strong>Apexmedicare:</strong> Web app for pharmacy management</li>
+                    <li><i class="fas fa-shopping-cart"></i> <strong>Online Pharmacy:</strong> E-commerce platform for buying medicines</li>
+                    <li><i class="fas fa-user"></i> <strong>Personal Portfolio:</strong> Responsive web portfolio</li>
+                </ul>
             </div>
         </div>
+        
         <div class="pagination">
             <span class="prev" onclick="changePagepre()"><i class="fas fa-arrow-left"></i></span>
             <span class="page-num">3</span>
@@ -47,14 +64,15 @@
     </div>
 
     <script>
-function changePagenext(){
+        function changePagenext() {
             window.location.href = "contactme.html";
         }
-        function changePagepre(){
+        function changePagepre() {
             window.location.href = "educationalservices.html";
         }
 
-       
-        </script>
-    </body>
+
+    </script>
+</body>
+
 </html>
