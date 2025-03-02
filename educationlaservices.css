@@ -16,8 +16,8 @@ body {
     flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
-    background: #fff;
-    padding: 10px;
+    /* background: #fff; */
+    /* padding: 10px; */
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -142,7 +142,9 @@ button:hover {
     body {
         height: auto;
         display: inline-block;
-        /* width: 89%; */
+        width: 0%;
+        /* align-items: center; */
+        /* justify-content: center; */
         
     }
     .container {
@@ -150,10 +152,11 @@ button:hover {
         width: 90%;
         text-align: center;
         align-items: center;
+        margin-left: 24px;
 
     }
     .left-section, .right-section {
-        width: 100%;
+        width: 91%;
         border-radius: 10px;
     }
     .right-section {
@@ -161,10 +164,9 @@ button:hover {
         border-top: 3px solid #007bff;
     }
     .pagination {
-        position: relative;
-        bottom: 88px;
-        justify-content: center;
-        margin-left: -13%;
-        
+        position: absolute; /* Ya 'fixed' use karein agar scrolling ke sath fix rakhna ho */
+        bottom: -1053px;
+        left: 72%; /* Center align karne ke liye */
+        transform: translateX(-50%); /* Bilkul center lane ke liye */
     }
 }
