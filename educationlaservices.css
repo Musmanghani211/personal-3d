@@ -10,6 +10,7 @@ body {
     min-height: 105vh;
     overflow-x: hidden;
     overflow-y: auto;
+
 }
 .container {
     display: flex;
@@ -17,7 +18,7 @@ body {
     width: 90%;
     max-width: 1200px;
     /* background: #fff; */
-    /* padding: 10px; */
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -28,6 +29,9 @@ body {
     flex: 1;
     padding: 10px;
     min-width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     
 }
 .left-section {
@@ -99,7 +103,6 @@ body {
 .service-box i {
     font-size: 24px;
     color: #007bff;
-    margin-left: 46%;
 }
 button {
     background: #007bff;
@@ -122,8 +125,8 @@ button:hover {
     gap: 10px;
     justify-content: center;
     position: absolute;
-    bottom: 32px;
-    left: 83%;
+    bottom: 4%;
+    left: 67%;
     transform: translateX(-50%);
     width: calc(100% - 40px);
 }
@@ -153,20 +156,24 @@ button:hover {
         text-align: center;
         align-items: center;
         margin-left: 24px;
+    
 
     }
     .left-section, .right-section {
         width: 91%;
         border-radius: 10px;
+        
     }
     .right-section {
         border-left: none;
         border-top: 3px solid #007bff;
     }
     .pagination {
-        position: absolute; /* Ya 'fixed' use karein agar scrolling ke sath fix rakhna ho */
-        bottom: -1051px;
-        left: 79%;/* Center align karne ke liye */
-        transform: translateX(-50%); /* Bilkul center lane ke liye */
+        position: static;
+        /* margin-bottom: -120px; */
+        /* left: auto; */
+        transform: none;
+        justify-content: end;
+        margin-top: -70px;
     }
 }
