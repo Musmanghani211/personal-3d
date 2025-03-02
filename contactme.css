@@ -73,14 +73,16 @@ button:hover {
 /* ✅ Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
     .container {
-        width: 95%; /* Full width on small screens */
+        width: 90%; /* Full width on small screens */
         padding: 20px;
     }
 
     input, textarea {
         padding: 10px;
         font-size: 14px;
+        width: 269px;
     }
+    
 
     button {
         padding: 10px;
