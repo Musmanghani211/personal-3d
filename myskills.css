@@ -111,7 +111,7 @@ body {
     .pagination {
         justify-content: center;
         bottom: 20px;
-        margin-left: 117%;
+        /* margin-left: 117%; */
     }
 }
 

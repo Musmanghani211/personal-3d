@@ -125,7 +125,7 @@ button:hover {
     gap: 10px;
     justify-content: center;
     position: absolute;
-    bottom: 4%;
+    bottom: -3%;
     left: 67%;
     transform: translateX(-50%);
     width: calc(100% - 40px);
@@ -169,11 +169,8 @@ button:hover {
         border-top: 3px solid #007bff;
     }
     .pagination {
-        position: static;
-        /* margin-bottom: -120px; */
-        /* left: auto; */
-        transform: none;
-        justify-content: end;
-        margin-top: -70px;
+        justify-content: center;
+        margin-bottom: -1278px;
+        margin-left: 25px;
     }
 }
